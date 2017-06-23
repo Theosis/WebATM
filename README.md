@@ -2,7 +2,7 @@
 
 Web app simulating an ATM.  
   
-Allows deposits or withdrawals with a form and show their transaction history, along with their balance.  
+Allows deposits or withdrawals with a form and shows their transaction history, along with their balance.  
   
 Will need the following pages:  
   
@@ -22,3 +22,4 @@ Transaction
 - reason  
   
 The users will not login, just enter their acct number  
+Should
