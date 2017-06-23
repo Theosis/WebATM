@@ -6,19 +6,19 @@ Should deposits or withdrawals with a form and show their transaction history, a
   
 Will need the following pages:  
   
--deposit form  
--withdrawal form  
--transaction history page  
--Balance  
+- deposit form  
+- withdrawal form  
+- transaction history page  
+- Balance  
   
 Model will need:   
   
 Transaction  
   
--id #(autoincrement)  
--acct #  
--action (withdrawal or deposit)  
--amount  
--reason  
+- id #(autoincrement)  
+- acct #  
+- action (withdrawal or deposit)  
+- amount  
+- reason  
   
 The users will not login, just enter their acct number  
