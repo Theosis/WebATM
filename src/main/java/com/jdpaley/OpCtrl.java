@@ -54,7 +54,7 @@ public class OpCtrl {
             }
  	
     @PostMapping(path="/")
-    public String getWebAct(Model m)
+    public String getWebAct(@ModelAttribute ("WebData") MyOwnWebDataObjectNoFreakinRepoInvolved wdo)
     	{   	
     	
     	/*m.addAttribute("WebData", wdo);
@@ -67,11 +67,14 @@ public class OpCtrl {
 			String jsonInString;
 //			jsonInString = mapper.writeValueAsString(m);
 //			System.out.println(jsonInString);
-	    	System.out.println("\n\nModel as pretty-printed JSON:\n");
+	    	System.out.println("\n\nwdo as pretty-printed JSON:\n");
 			// Convert object to JSON string and pretty print
-			jsonInString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(m);
+			jsonInString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(wdo);
 			System.out.println(jsonInString);    	    	
     	System.out.println(" ");
+    	//System.out.println(wdo.getAcct(), wdo.getAct());
+    	//System.out.println(" ");
+    	
     	
 		} catch (JsonGenerationException e) {
 			e.printStackTrace();
